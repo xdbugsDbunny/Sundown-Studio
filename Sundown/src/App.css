@@ -1,0 +1,22 @@
+@font-face {
+    font-family: 'NeuehaasdisplayMediu';
+    src: url(./assets/Fonts/NeueHaasDisplayMediu.ttf),
+}
+
+@font-face {
+    font-family: 'NeuehaasdisplayRoman';
+    src: url(./assets/Fonts/NeueHaasDisplayRoman.ttf);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy';
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}

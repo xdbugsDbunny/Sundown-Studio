@@ -1,0 +1,80 @@
+.wrapper{
+    width: 100%;
+    min-height: 100vh;
+    padding: 0vw 2vw;
+}
+
+.video{
+    border-radius: 30px;
+    margin-top: 4vw;
+    width: 100%;
+    position: relative;
+}
+
+.mainBlob{
+    position: absolute;
+    width: 46vw;
+    height: 36vw;
+    right: 0;
+    top: 69vh;
+}
+
+.blob1{
+    height: 100%;
+    width: 100%;
+    filter: blur(20px);
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    background-color: #FE350B;
+    position: absolute;
+}
+.blob2{
+    height: 30vw;
+    width: 30vw;
+    filter: blur(20px);
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    background-color: #FE350B;
+    /* background-color: black; */
+    position: absolute;
+    animation-name: blobAnimation1;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+.blob3{
+    height: 30vw;
+    width: 30vw;
+    filter: blur(20px);
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    background-color: #FE350B;
+    position: absolute;
+    animation-name: blobAnimation2;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes blobAnimation1 {
+    from{
+        transform: translate(52%,-3%);
+    }
+    to{
+        transform: translate(0%,-10%);
+    }
+}
+
+@keyframes blobAnimation2 {
+    from{
+        transform: translate(5%,-5%);
+    }
+    to{
+        transform: translate(-20%,20%);
+    }
+}
+
+
+
