@@ -1,0 +1,72 @@
+.container{
+    position: relative;
+    background-color: #e1dbd2;
+}
+.mainWrapper {
+    height: 80vh;
+    width: 100%;
+    /* background-color: pink; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4vw 4vw;
+    position: relative;
+    z-index: 9;
+}
+
+.leftWrapper {
+    height: 100%;
+    width: 58%;
+    /* background-color: brown; */
+}
+
+.leftWrapper h1{
+    font-size: 3.6vw;
+    font-family: 'NeuehaasdisplayMediu', sans-serif;
+    line-height: 4vw;
+    color: #0b0500;
+}
+
+.rightWrapper {
+    height: 100%;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.image {
+    border-radius: 15px;
+    margin-bottom: 2vw;
+}
+
+.rightWrapper p{
+    font-weight: 100;
+    font-family: 'NeuehaasdisplayLight', sans-serif;
+}
+
+.blob {
+    height: 30vw;
+    width: 30vw;
+    position: absolute;
+    background:linear-gradient(to top right,#FE350B, #fe4c0b);
+    border-radius: 50%;
+    top: 25%;
+    left: 25%;
+    filter: blur(20px);
+    animation-name: blobAnimation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+
+@keyframes blobAnimation {
+    from{
+        transform: translate(10%,-10%) skew(0);
+    }
+    to{
+        transform: translate(-10%,10%) skew(-10deg);
+    }
+}

@@ -1,0 +1,71 @@
+.serviceSection {
+    display: flex;
+    position: relative;
+    /* margin-top: 2vw; */
+    background-color: #e1dbd2;
+}
+
+.container {
+    margin: 2vw;
+    width: 100%;
+    position: relative;
+}
+
+.serviceWrapper {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    border-radius: 20px;
+}
+
+.leftWrapper{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    padding-left: 10vw;
+    background-color: black;
+    border-radius: 20px 0 0 20px;
+}
+
+.leftWrapper p{
+    margin-top: 5vw;
+    font-family: 'NeuehaasdisplayRoman', sans-serif;
+    color: white;
+    width: 80%;
+}
+
+.leftWrapper h2{
+    font-family: 'NeuehaasdisplayMediu', sans-serif;
+    font-size: 4.25em;
+    color: rgba(255, 255, 255, 0.37);
+    cursor: pointer;
+    border-left: 2px solid rgba(255, 255, 255, 0.37);
+    padding-left: 1vw;
+    line-height: 4vw;
+}
+
+.rightWrapper{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+    border-radius: 18px;
+}
+
+.leftWrapper .activeH2{
+    color: white;
+    border-left: 2px solid red;
+}
+
+.h2Container{
+    display: flex;
+    flex-direction: column;
+}
+

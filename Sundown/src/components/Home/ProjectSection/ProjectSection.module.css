@@ -1,0 +1,127 @@
+.mainWrapper{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #e1dbd2;
+    padding: 4vw 0;
+}
+
+.elem{
+    height: 125px;
+    width: 100%;
+    position: relative;
+    border-bottom: 1px solid black;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    padding: 0 2vw;
+}
+
+.elem h2{
+    font-size: 3vw;
+    position: relative;
+    z-index: 9;
+    font-family: 'NeuehaasdisplayMediu', sans-serif;
+}
+
+.elem .overlay{
+    height: 100%;
+    width: 100%;
+    background-color: orange;
+    position: absolute;
+    left: 0;
+    top: -100%;
+    transition: all ease 0.25s;
+}
+
+.elem:hover .overlay{
+    top: 0;
+}
+
+.fixedImage {
+    height: 30vw;
+    width: 24vw;
+    /* background-color: red; */
+    border-radius: 15px;
+    position: fixed;
+    z-index: 99;
+    left: 50%;
+    top: 25%;
+    display: none;
+    background-size: cover;
+    background-position: center;
+}
+
+.hoverContent {
+    height: 30vw;
+    width: 24vw;
+    /* background-color: red; */
+    border-radius: 15px;
+    position: fixed;
+    z-index: 99;
+    background-size: cover;
+    background-position: center;
+}
+
+.smallDot {
+    height: 0.5vw;
+    width: 0.5vw;
+    background-color: #fe330a;
+    border-radius: 50%;
+    margin-right: 12px;
+}
+
+.elem h5{
+    font-size: 1vw;
+    font-family: 'NeuehaasdisplayLight', sans-serif;
+    font-weight: 200;
+}
+
+.projectButton{
+    display: flex;
+    align-items: center;
+    padding: 4vw 2vw;
+}
+
+.projectButton h4{
+    padding: 10px 20px;
+    border: 1px solid rgba(0, 0, 0, 0.296);
+    border-radius: 50px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.796);
+    font-size: 18px;
+    position: relative;
+    transition: all ease 0.4s;
+    overflow: hidden;
+}
+
+.projectButton h4 a{
+    text-decoration: none;
+    color: inherit;
+    position: relative;
+    z-index: 9;
+    font-family: 'NeuehaasdisplayRoman', sans-serif;
+    /* font-size: 2vw;
+    font-weight: 400; */
+}
+
+.projectButton h4:hover a{
+    color: white;
+}
+
+.projectButton h4::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    left: 0;
+    bottom: -100%;
+    border-radius: 50%;
+    transition: all ease 0.4s;
+}
+
+
+.projectButton h4:hover::after{
+    bottom: 0;
+    border-radius: 50px;
+}

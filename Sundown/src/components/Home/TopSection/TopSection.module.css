@@ -1,13 +1,13 @@
 .mainWrapper{
     height: 65vh;
     width: 100%;
-    /* background-color: pink; */
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
     border-bottom: 1px solid rgba(0, 0, 0, 0.808);
     padding-bottom: 3vw;
     padding: 0vw 2vw;
+    background-color: #e1dbd2;
 }
 
 .leftWrapper h3{

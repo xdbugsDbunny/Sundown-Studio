@@ -1,0 +1,8 @@
+.swiperSection {
+  height: 75vh;
+  width: 100%;
+  /* background-color: #e1dbd2; */
+  background-color: red;
+  position: relative;
+  padding: 2vw;
+}
