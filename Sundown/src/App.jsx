@@ -6,13 +6,13 @@ import 'locomotive-scroll/dist/locomotive-scroll.css'; // Import the styles
 
 const App = () => {
 
-  // useEffect(() => {
-  //   const scroll = new LocomotiveScroll({
-  //     el: document.querySelector('#main-container'),
-  //     smooth: true,
-  //     // Add other options as needed
-  //   });
-  // }, []); // Empty dependency array ensures useEffect runs after mount  
+  useEffect(() => {
+    const scroll = new LocomotiveScroll({
+      el: document.querySelector('#main-container'),
+      smooth: true,
+      // Add other options as needed
+    });
+  }, []); // Empty dependency array ensures useEffect runs after mount  
 
   return (
     <>
